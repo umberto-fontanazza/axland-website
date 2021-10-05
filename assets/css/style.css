@@ -15525,6 +15525,11 @@ div.rn-page-title-area.bg_image {
   background-position: 0% 20%;
 }
 
+#contact-title-container {
+  padding: 30vh 0 !important;
+  background-attachment: fixed;
+}
+
 .google-map-area {
   width: 100%;
   height: 400px;

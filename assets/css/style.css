@@ -15521,6 +15521,10 @@ ul.list-style li + li {
   border-color: #ee7760;
 }
 
+div.rn-page-title-area.bg_image {
+  background-position: 0% 20%;
+}
+
 .google-map-area {
   width: 100%;
   height: 400px;

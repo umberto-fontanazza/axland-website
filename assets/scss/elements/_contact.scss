@@ -124,6 +124,12 @@ textarea {
     border-color: $theme-color ;
 }
 
+div.rn-page-title-area {
+    &.bg_image {
+        background-position: 0% 20%;
+    }
+}
+
 
 
 .google-map-area {

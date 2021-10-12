@@ -357,7 +357,7 @@ p:last-child {
 
 
 %gradientDefault {
-    background: linear-gradient(to right, #f81f01 50%, #ee076e 50%);
+    background: linear-gradient(158deg, rgba(242,15,0,1) 16%, rgba(186,0,23,1) 71%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -368,14 +368,14 @@ p:last-child {
 }
 
 .theme-gradient {
-    background: linear-gradient(-259deg, #f81f01 0, #ee076e 100%);
+    background: linear-gradient(158deg, rgba(242,15,0,1) 16%, rgba(186,0,23,1) 71%);
 }
 
 
 
 
 %theme-gradient {
-    background: linear-gradient(-259deg, #f81f01 0, #ee076e 100%);
+    background: linear-gradient(158deg, rgba(242,15,0,1) 16%, rgba(186,0,23,1) 71%);
 }
 
 

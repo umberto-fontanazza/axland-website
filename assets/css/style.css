@@ -18059,6 +18059,9 @@ a.purchase-btn:hover {
 .photo-page .video-grid .grid-item .img-wrapper {
   position: relative;
 }
+.photo-page .video-grid .grid-item .img-wrapper img {
+  max-height: 400px;
+}
 .photo-page .video-grid .grid-item .img-wrapper::after {
   content: "";
   position: absolute;

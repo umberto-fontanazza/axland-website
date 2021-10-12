@@ -9,6 +9,9 @@
           transition: all 1s ease-in-out;
       }
       .img-wrapper {
+          img {
+              max-height: 400px;
+          }
           position: relative;
           &::after {
               content: '';

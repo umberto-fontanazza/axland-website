@@ -13625,7 +13625,7 @@ a.item-portfolio-static {
 }
 
 .slider-fixed--height {
-  min-height: 1080px;
+  height: 100vh;
   width: 100%;
 }
 

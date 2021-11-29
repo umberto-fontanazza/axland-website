@@ -151,6 +151,7 @@ p.form-messege-active.form-messege.success {
     color: green;
 }
 #contact-us {
+
     padding: 120px 0;
     @media #{$sm-layout} {
         padding-bottom: 0;
@@ -158,29 +159,8 @@ p.form-messege-active.form-messege.success {
     }
 
     .row.contact-us {
-        margin-top: 20px;
+        margin-top: 7.5vh;
     }
-}
-.contact-us-wrapper {
-    background-color: #ff9625;
-    padding: 5em;
-    margin-top: -500px;
-    @media #{$sm-layout} {
-        margin-top: 0px;
-        padding: 3em 1em;
-        .section-title h2.title  {
-            font-size: 28px;
-        }
-    }
-    @media #{$md-layout} {
-        margin-top: -250px;
-        padding: 3em 1em;
-        .section-title h2.title  {
-            font-size: 38px;
-        }
-    }
-
-   
 }
 
 @media #{$sm-layout}{

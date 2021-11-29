@@ -193,6 +193,23 @@
                         </div>
                     </div>
                 </div>
+                <script>
+                    function heroScrolledPercentage() {
+                        let height = document.querySelector("#contact-title-container").clientHeight / 2
+                        let scrolled = window.scrollY
+
+                        let percentage = scrolled * 100 / height
+                        if(percentage > 100)
+                            return 100
+                        return percentage
+                    }
+                    document.addEventListener("scroll",evt => {
+                        let backgroundContainer = document.querySelector("#contact-title-container")
+                        let backgroundPos = heroScrolledPercentage().toString()+"%"
+                        document.querySelector("#contact-title-container").style.backgroundPositionX = backgroundPos
+                        console.log(backgroundPos)
+                    })
+                </script>
             </section>
             <!-- End Contact Area  -->
 

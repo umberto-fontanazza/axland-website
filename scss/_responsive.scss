@@ -1,0 +1,115 @@
+// ===================== ABOUT ======================
+
+@media (max-width: 575px) {
+  .imgComponentiTeam {
+    width: 50%;
+    margin-bottom: 10%;
+  }
+}
+
+@media (max-width: 475px) {
+  .imgComponentiTeam {
+    width: 80%;
+    margin-bottom: 10%;
+  }
+}
+
+// ===================== HOME ======================
+
+@media (max-width: 700px) {
+  #filmPhotoIdAnnullamentoClasseContainer {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .divPhotoFilm {
+    border: 0px;
+    height: 40vh;
+
+    & > img {
+      height: 40vh;
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .divPhotoFilm {
+    margin: 15px;
+  }
+}
+
+// ===================== HAM MENU ======================
+
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .nav-links {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    position: absolute;
+    right: 0px;
+    height: 100vh;
+    z-index: 3 !important;
+    top: 0vh;
+    background-color: $back-col-opacity;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    transform: translateX(100%);
+    transition: transform all 0.5s ease-in;
+    & li {
+      opacity: 1;
+    }
+    & a {
+      font-weight: bold;
+    }
+  }
+  .burger {
+    display: block;
+    z-index: 3 !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav-links {
+    width: 70%;
+    display: none;
+  }
+}
+
+// ===================== RETURN TO TOP ======================
+
+@media (max-width: 400px) {
+  #return-to-top {
+    visibility: hidden;
+  }
+}
+
+// ===================== TEXT ======================
+
+@media screen and (max-width: 400px) {
+  .gradientMontserrat {
+    font-size: 60px;
+  }
+}
+
+// =================== PORTFOLIO ===================
+@media screen and (max-width: 400px) {
+  .marginTopImgCardFotoVideo {
+    margin-top: 0;
+  }
+  .cardFotoVideo {
+    margin-top: 5vh;
+  }
+  .containerBtnFotoVideo {
+    margin-bottom: -8vh !important;
+  }
+  .functionFotoVideo {
+    font-size: 1.5rem !important;
+  }
+}

@@ -1,0 +1,126 @@
+.siteNavigation {
+  display: flex;
+  /*justify-content: space-around;*/
+  align-items: center;
+  min-height: 8vh;
+  background-color: transparent;
+  padding-top: 5px;
+}
+
+.menu {
+  width: 60%;
+  float: right;
+  right: 15px !important;
+  position: absolute;
+}
+
+@media (min-width: 1001px) and (max-width: 1024px) {
+  .menu {
+    right: -155px !important;
+  }
+}
+
+.site-logo {
+  width: 130px;
+}
+
+.nav-links {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 0 !important;
+
+  & ul {
+    position: absolute;
+    right: 30px !important;
+  }
+  & li {
+    list-style: none;
+  }
+  & a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    &:hover {
+      color: $thumbBG;
+    }
+  }
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+  right: 20px !important;
+  position: absolute;
+  & div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .nav-links {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    position: absolute;
+    right: 0px;
+    height: 100vh;
+    z-index: 3 !important;
+    top: 0vh;
+    background-color: $back-col-opacity;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    transform: translateX(100%);
+    transition: transform all 0.5s ease-in;
+    & li {
+      opacity: 1;
+    }
+    & a {
+      font-weight: bold;
+    }
+  }
+  .burger {
+    display: block;
+    z-index: 3 !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav-links {
+    width: 100%;
+    display: none;
+  }
+}
+
+.nav-active {
+  transform: translate(6%, -6%);
+  display: flex;
+}
+
+.active-blur {
+  filter: blur(5px);
+}
+
+.toggle {
+  & .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  & .line2 {
+    opacity: 0;
+  }
+  & .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+}

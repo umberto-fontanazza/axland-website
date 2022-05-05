@@ -1,0 +1,188 @@
+.imgServiziCom{
+  background-image: url("../images/servizi/commercial.jpg");
+}
+
+.imgServiziPer{
+  background-image: url("../images/servizi/personale.jpg");
+}
+
+.imgServiziEvent{
+  background-image: url("../images/servizi/eventi.jpg");
+}
+
+.imgServiziAuto{
+  background-image: url("../images/servizi/automotive.jpg");
+}
+
+.imgServiziVideo{
+  background-image: url("../images/servizi/videoclip.jpg");
+}
+
+.imgServiziCine{
+  background-image: url("../images/servizi/cinematic.jpg");
+}
+
+.imgGrafiche{
+  background-image: url("../images/servizi/grafica.jpg");
+}
+
+.imgVfx{
+  background-image: url("../../images/servizi/vfx.jpg");
+}
+
+.imgDrone{
+  background-image: url("../images/servizi/drone.jpg");
+}
+
+.imgMusica{
+  background-image: url("../images/servizi/musica.jpg");
+}
+
+.imgSocialMediaManaging{
+  background-image: url("../images/servizi/socialMediaManaging.jpg");
+}
+
+.imgSocialMediaMarketing{
+  background-image: url("../images/servizi/socialMediaMarketing.jpg");
+}
+
+.divContentCreation {
+  height: 50vh;
+  max-height: 50vh;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.divRelatedWorks {
+  width: 100%;
+  height: 35vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btnServizi {
+  @extend %btnGeneral;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 150px;
+}
+
+.btnServiziCom,
+.btnServiziPer,
+.btnServiziEvent,
+.btnServiziAuto {
+  margin-bottom: 25%;
+}
+
+.btnServiziVideo,
+.btnServiziCine {
+  margin-bottom: 20%;
+}
+
+.imgServizi {
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.titleContentCreation {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 20px;
+  padding-bottom: 30%;
+  text-align: center;
+}
+
+.titleTextRelatedWorks {
+  text-align: left;
+  margin-top: 2%;
+  margin-right: 4%;
+  margin-bottom: 2vh;
+}
+
+.textServizi {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  padding: 20px;
+  text-align: center;
+  display: none;
+}
+
+.addFilterServizi {
+  filter: blur(3px);
+}
+
+.addDisplayNone {
+  display: none !important;
+}
+
+.addDisplayBlock {
+  display: block !important;
+}
+
+.ix {
+  display: none;
+  cursor: pointer;
+  float: right;
+  margin-right: 4%;
+  margin-top: -44vh;
+
+  & div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+  }
+  & .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  & .line2 {
+    opacity: 0;
+  }
+  & .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+}
+
+@media (max-width: 450px) {
+  .divContentCreation,
+  .imgServizi {
+    height: 45vh;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-bottom: 0;
+  }
+  .noPadding {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .titleTextRelatedWorks {
+    margin-left: 4% !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .titleTextRelatedWorks {
+    margin-left: 0% !important;
+  }
+}
+
+.separe {
+  height: 3px;
+  width: 70%;
+  background-color: $thumbBG;
+}

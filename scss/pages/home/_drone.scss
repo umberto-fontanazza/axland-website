@@ -1,0 +1,99 @@
+.megadrone {
+  width: 100%;
+  opacity: 0.15;
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+}
+.megadrone svg {
+  width: 100%;
+  height: auto;
+}
+.megadrone .section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.megadrone .down-50 {
+  transform: translateY(50px);
+}
+.megadrone .down-100 {
+  transform: translateY(100px);
+}
+.megadrone .down-150 {
+  transform: translateY(150px);
+}
+.megadrone #frame {
+  -webkit-transition: -webkit-transform 1s;
+  transition: transform 1s;
+}
+.megadrone #esc {
+  -webkit-transition: -webkit-transform 1s;
+  transition: transform 1s;
+}
+.megadrone #bot-spacer {
+  -webkit-transition: -webkit-transform 1s;
+  transition: transform 1s;
+}
+.megadrone #motor {
+  -webkit-transition: -webkit-transform 1s;
+  transition: transform 1s;
+}
+.megadrone #fc {
+  -webkit-transition: -webkit-transform 1s;
+  transition: transform 1s;
+}
+.megadrone .up-50 {
+  transform: translateY(-50px);
+}
+.megadrone .up-75 {
+  transform: translateY(-75px);
+}
+.megadrone .up-100 {
+  transform: translateY(-100px);
+}
+.megadrone .up-150 {
+  transform: translateY(-150px);
+}
+.megadrone .up-200 {
+  transform: translateY(-200px);
+}
+.megadrone #nut {
+  -webkit-transition: -webkit-transform 1s;
+  transition: transform 1s;
+}
+.megadrone #prop {
+  -webkit-transition: -webkit-transform 1s;
+  transition: transform 1s;
+}
+.megadrone #top-spacer {
+  -webkit-transition: -webkit-transform 1s;
+  transition: transform 1s;
+}
+.megadrone #xt60 {
+  -webkit-transition: -webkit-transform 1s;
+  transition: transform 1s;
+}
+.megadrone #wire {
+  -webkit-transition: -webkit-transform 1s;
+  transition: transform 1s;
+}
+.megadrone #fpv {
+  -webkit-transition: -webkit-transform 1s;
+  transition: transform 1s;
+}
+.megadrone #gopro {
+  -webkit-transition: -webkit-transform 1s;
+  transition: transform 1s;
+}
+.megadrone #vtx {
+  -webkit-transition: -webkit-transform 1s;
+  transition: transform 1s;
+}
+.rn-slider-area {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+}

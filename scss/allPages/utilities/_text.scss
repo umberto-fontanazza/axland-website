@@ -1,0 +1,45 @@
+%gradientText {
+  -webkit-text-fill-color: transparent;
+  background-image: $gradient-color;
+  background-color: initial;
+  -webkit-background-clip: text;
+}
+
+.gradientText {
+  -webkit-text-fill-color: transparent;
+  background-image: $gradient-color;
+  background-color: initial;
+  -webkit-background-clip: text;
+}
+
+.gradientMontserrat {
+  @extend %gradientText;
+  font-family: $font-secondary;
+  font-size: 70px;
+}
+
+.gradientRaleway {
+  @extend %gradientText;
+  font-family: $font-primary;
+}
+
+.raleway {
+  font-family: $font-primary;
+  font-size: 65px;
+}
+
+@media screen and (max-width: 450px) {
+  .gradientMontserrat {
+    font-size: 60px;
+  }
+
+  .raleway {
+    font-size: 55px;
+    margin-left: 10px;
+  }
+
+  .noPadding {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}

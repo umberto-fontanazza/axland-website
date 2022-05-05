@@ -1,0 +1,125 @@
+.showcase {
+	height: 90vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #fff;
+	padding: 0 20px;
+}
+
+.content {
+	z-index: 2;
+}
+
+.contentEsplora{
+  z-index: 1;
+}
+
+.img-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+
+  &:after{
+    content: '';
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+  }
+}
+
+#imgHeaderHome{
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.arrowEsplora{
+  bottom: 0%; 
+  position: absolute;
+}
+
+// ============ AZIENDE, PRIVATI E ARTISTI ==============
+
+.imgAzArPr {
+  width: 140px;
+  height: 70px;
+}
+
+// ============ PHOTOGRAPHY AND FILMMAKING ==============
+
+.divPhotoFilm {
+  height: 55vh;
+  border: 1px solid black;
+
+  & > img {
+    width: 100% !important;
+    height: 55vh;
+  }
+}
+
+@media (max-width: 700px) {
+  #filmPhotoIdAnnullamentoClasseContainer {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .divPhotoFilm {
+    border: 0px;
+    height: 40vh;
+
+    & > img {
+      height: 40vh;
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .divPhotoFilm {
+    margin: 20px;
+  }
+}
+
+// =============== DRONE ====================
+
+#textHomeDrone {
+  font-size: 50px;
+  margin-top: 10%;
+}
+
+// ============== KEEP IN TOUCH ===============
+
+#textKeepInTouch {
+  font-family: $font-secondary;
+  font-size: 45px;
+}
+
+.textFrormKeepInTouch {
+  color: $text-col-form-keep;
+}
+
+#backColFormKeep {
+  background-color: white;
+  box-shadow: 1px 1px 20px 5px #000;
+}
+
+.btnInviaMail {
+  @extend %btn;
+  background-color: $thumbBG !important;
+  width: 100px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid $text-col-form-keep;
+  font-weight: bold;
+  float: right;
+}

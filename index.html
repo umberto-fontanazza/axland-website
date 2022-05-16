@@ -26,6 +26,9 @@
         margin-right: 0 !important;
         margin-left: 0 !important;
       }
+      body{
+        height: 100%;
+      }
     </style>
 </head>
 <body>
@@ -39,12 +42,14 @@
       </div>
       <div class="content menu">
         <ul class="nav-links">
+          <div class="elementOfMenu">
             <li><a href="#">Home</a></li>
             <li><a href="html/portfolio.html">Portfolio</a></li>
             <li><a href="html/servizi.html">Servizi</a></li>
             <!--<li><a href="html/caseStudies.html">Case studies</a></li>-->
             <li><a href="html/about.html">About us</a></li>
-            <!--<li><a href="#textKeepInTouch">Contattaci</a></li>-->
+            <li><a href="#textKeepInTouch">Contattaci</a></li>
+          </div>
         </ul>
       </div>
       <!-- Sotto i 1000px della dimensione dello schermo ==== MENU BURGER -->
@@ -57,12 +62,12 @@
     <!-- IMG HEADER -->
     <section class="showcase">
       <div class="img-container">
-        <picture>
+        <!--<picture>
           <source media="(min-width: 1000px)" srcset="images/home/frontPhotoDesktop.jpg" id="imgHeaderHome">
           <source media="(min-width: 600px)" srcset="images/home/frontPhotoDesktop.jpg" id="imgHeaderHome">
           <source media="(min-width: 380px)" srcset="images/home/frontPhotoMobile.jpg" id="imgHeaderHome">
           <img src="images/home/frontPhotoMobile.jpg" alt="IfItDoesntMatchAnyMedia" id="imgHeaderHome">
-        </picture>
+        </picture>-->
       </div>
       <a href="#textHomeACreativeStudio" class="arrowEsplora">
         <div class="col-12 col-md-12 text-center contentEsplora">
@@ -159,7 +164,7 @@
             </p>
           </div>
         </div>
-        <div class="col-md-6 mt-5 mb-5">
+        <div class="col-md-6 mt-5">
           <div class="section megadrone" id="sec-1">
               <div class="ctn">
                 <svg id="svg39620" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1100" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
@@ -3184,7 +3189,7 @@
   <!-- =============================================================================== -->
 
   <!-- KEEP IN TOUCH -->
-  <!--<div class="row mt-4">
+  <div class="row mt-4">
     <div class="col-12 mt-5 text-center">
       <h2 class="mt-5" id="textKeepInTouch">#keepintouch</h2>
     </div>
@@ -3195,29 +3200,29 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope-fill mr-1" viewBox="0 0 16 16">
             <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
           </svg>
-          info@axland.it
+          <b>info@axland.it</b>
         </p>
         <p style="color: rgb(102, 103, 89)">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone-fill mr-1" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
           </svg>  
-          +39 3334408236
+          <b>+39 3334408236</b>
         </p>
         <form method="POST" action="sendMail.php" id="contact-form">
           <div class="mb-3">
-            <input type="email" class="form-control mt-3" name="emailToSend" aria-describedby="emailHelp" placeholder="Email" required>
+            <input type="email" class="form-control mt-3" name="emailToSend" aria-describedby="emailHelp" placeholder="Email *" required>
           </div>
           <div class="mb-3">
-            <input type="text" class="form-control mt-4 mb-3" name="objectToSend" placeholder="Oggetto" required>
+            <input type="text" class="form-control mt-4 mb-3" name="objectToSend" placeholder="Oggetto *" required>
           </div>
           <div class="mb-3">
-            <textarea type="text" class="form-control mt-4 mb-3" name="bodyToSend" placeholder="Corpo della mail" rows="5" required></textarea>
+            <textarea type="text" class="form-control mt-4 mb-3" name="bodyToSend" placeholder="Corpo della mail *" rows="5" required></textarea>
           </div>
           <button type="submit" class="btnInviaMail mt-3 mb-3" name="sub">Submit</button>
         </form>
       </div>
     </div>
-  </div>-->
+  </div>
 
   <!-- FOOTER -->
   <footer style="margin-top: 0">
@@ -3247,12 +3252,12 @@
           <p><a href="html/servizi.html">Servizi</a></p>
           <!--<p><a href="html/caseStudies.html">Case studies</a></p>-->
           <p><a href="html/about.html">About us</a></p>
-          <p><a href="">Contattaci</a></p>
+          <p><a href="#textKeepInTouch">Contattaci</a></p>
         </div>
         <div class="col-12 col-md-12 mt-5 mb-5">
           <h3 class="colorTitleFooter">#keepintouch</h3>
-          <p><a href="#textKeepInTouch">info@axland.it</a></p>
-          <p><a href="tel:+39 3334408236">+39 3334408236</a></p>
+          <p><a href="#textKeepInTouch"><i>info@axland.it</i></a></p>
+          <p><a href="tel:+39 3334408236"><i>+39 3334408236</i></a></p>
         </div>
       </div>
     </div>

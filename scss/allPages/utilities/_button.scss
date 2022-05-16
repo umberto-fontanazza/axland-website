@@ -35,3 +35,15 @@
 .btnGeneral {
   @extend %btnGeneral;
 }
+
+.xModal {
+  color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  margin: 10px;
+  cursor: pointer;
+  float: right;
+}
+
+#mailToAxland:hover {
+  color: $gradient-color;
+}
